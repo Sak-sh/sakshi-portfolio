@@ -3,12 +3,12 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import Navbar from './Components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Education from './components/Education';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
+import About from './Components/About';
+import Education from './Components/Education';
 import Projects from './Components/Projects';
-import Contact from './components/Contact';
+import Contact from './Components/Contact';
 import Project1 from './Components/Project1';
 import Project2 from './Components/Project2';
 
