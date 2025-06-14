@@ -1,0 +1,56 @@
+.project-page {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+
+  /* Add margin from top, left and bottom for the whole page container */
+  margin-top: 50px;     /* example value, adjust as needed */
+  margin-left: 20px;    /* example value, adjust as needed */
+  margin-bottom: 20px;  /* example value, adjust as needed */
+}
+
+/* If you want to add margin on sections inside project-page */
+.project-page section {
+  margin-top: 20px;     /* space from top */
+  margin-left: 20px;    /* space from left */
+  margin-bottom: 20px;  /* space from bottom */
+  margin-right: 0;      /* keep right margin zero or adjust */
+}
+
+
+.project-page h1 {
+  font-size: 36px;
+  color: #00ffae;
+  margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+.project-page h2 {
+  color: #00ffc3;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.project-page p,
+.project-page ul {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.project-page ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.project-page img {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00ffc3;
+}

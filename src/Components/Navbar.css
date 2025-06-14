@@ -1,0 +1,39 @@
+/* Hide default Bootstrap icon */
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+
+/* Custom white 3-line hamburger icon */
+.custom-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.custom-toggler-icon::before,
+.custom-toggler-icon::after,
+.custom-toggler-icon div {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Top line */
+.custom-toggler-icon::before {
+  top: 0;
+}
+
+/* Middle line */
+.custom-toggler-icon div {
+  top: 9px;
+}
+
+/* Bottom line */
+.custom-toggler-icon::after {
+  bottom: 0;
+}
