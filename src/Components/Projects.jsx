@@ -11,7 +11,7 @@ const Projects = () => {
           {/* Card 1 */}
           <div className="project-card interactive-border">
             <img
-              src="/public/bookswap.webp"
+              src="/bookswap.webp"
               alt="Book Sharing Platform"
               className="project-image"
             />
@@ -28,7 +28,7 @@ const Projects = () => {
           {/* Card 2 */}
           <div className="project-card interactive-border">
             <img
-              src="/public/gpk.jpg"
+              src="/gpk.jpg"
               alt="Campus Placement Platform"
               className="project-image"
             />
@@ -44,7 +44,7 @@ const Projects = () => {
            {/* Card 2 */}
           <div className="project-card interactive-border">
             <img
-              src="/public/blog.jpg"
+              src="/blog.jpg"
               alt="Campus Placement Platform"
               className="project-image"
             />
