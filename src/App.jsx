@@ -11,6 +11,8 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Project1 from './Components/Project1';
 import Project2 from './Components/Project2';
+import Project3 from './Components/Project3';
+import Skills from './Components/Skills';
 
 const MainPageWrapper = () => {
   const location = useLocation();
@@ -29,6 +31,7 @@ const MainPageWrapper = () => {
       <Home />
       <About />
       <Education />
+      <Skills />
       <Projects />
       <Contact />
     </>
@@ -63,6 +66,15 @@ function App() {
           element={
             <>
               <Project2 />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/project3"
+          element={
+            <>
+              <Project3 />
               <Footer />
             </>
           }

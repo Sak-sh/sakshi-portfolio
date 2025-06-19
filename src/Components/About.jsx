@@ -1,16 +1,22 @@
 import React from 'react';
-import './style.css';
-
+import './About.css';
+import { FaUserGraduate } from 'react-icons/fa';
 const About = () => {
   return (
-    <section id="about" className="py-5 text-center">
-      <div className="container">
-        <h2 style={{ color: '#10B981',fontSize: '38px' }}>ABOUT ME</h2>
-
-        <div className="aboutcard">
-          <p >
-            Hi, I’m Sakshi Chavan, a passionate web developer currently pursuing a Bachelor of Engineering in Computer Engineering at Dr. D. Y. Patil Pratishthan's D.Y. Patil College of Engineering, Akurdi, Pune. 
-            I have completed my diploma from Government Polytechnic Karad. I have developed strong technical skills in full-stack web development, including proficiency in modern technologies such as JavaScript, React, Node.js, and MongoDB.
+    <section id="about" className="about-section">
+      <div className="about-container">
+        <h2 className="about-heading">
+ <FaUserGraduate style={{ marginRight: '12px', color: '#00ffae' }} /> ABOUT ME</h2>
+        <div className="about-card fade-in">
+          <p>
+            Hi, I’m <strong>Sakshi Chavan</strong>, a passionate full-stack web developer currently pursuing my Bachelor of Engineering in Computer Engineering at <strong>Dr. D. Y. Patil College of Engineering, Akurdi, Pune</strong>. 
+            I have successfully completed my diploma from <strong>Government Polytechnic Karad</strong>.
+          </p>
+          <p>
+            My expertise lies in building full-stack applications using modern technologies like <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Node.js, Express.js</strong>, <strong>MongoDB</strong>, . I love solving complex problems and turning creative ideas into real-world projects.
+          </p>
+          <p>
+            Apart from coding, I enjoy learning new technologies, collaborating with teams, and continuously improving my skills to build efficient and scalable web solutions.
           </p>
         </div>
       </div>

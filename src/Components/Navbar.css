@@ -2,6 +2,15 @@
 .navbar-toggler .navbar-toggler-icon {
   display: none;
 }
+.navbar-nav {
+  font-size: 1.3rem; /* Bigger font size for all nav items */
+  font-weight: 600;  /* Optional: make it a bit bolder */
+}
+.navbar {
+  min-height: 80px; /* increase as needed */
+  padding-top: 0.75rem;  /* adjust vertical padding */
+  padding-bottom: 0.75rem;
+}
 
 /* Custom white 3-line hamburger icon */
 .custom-toggler-icon {
@@ -37,3 +46,9 @@
 .custom-toggler-icon::after {
   bottom: 0;
 }
+.navbar-brand {
+  font-size: 1.8rem; /* increase size */
+  font-weight: 700;
+  
+}
+

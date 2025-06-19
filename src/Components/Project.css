@@ -9,8 +9,8 @@
   margin-bottom: 50px;
   font-family: 'Times New Roman', serif;
   font-size: 38px;
-  color: #10B981;
-  
+  color: #ffffff;
+   font-Weight: bold;
 }
 
 .project-row {
@@ -20,9 +20,7 @@
   flex-wrap: wrap;
 }
 
-.project-row.center {
-  justify-content: center;
-}
+
 
 .project-card {
   background-color: #1a1a1a;
@@ -31,7 +29,7 @@
   padding: 25px;
   border-radius: 12px;
   width: 420px;
-  height: 450px;
+  height: 620px;  /* Increased height */
   box-shadow: 0 0 12px rgba(0, 255, 174, 0.2);
   text-align: left;
 
@@ -39,6 +37,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.project-image {
+  width: 100%;
+  height: 160px;  /* Fixed height */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
 
 .project-card h4 {
   font-size: 30px;
@@ -76,10 +83,22 @@
 }
 
 
-.project-card-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
+
+/* Less intense pulse glow animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 8px rgba(46, 204, 113, 0.5),
+      0 0 16px rgba(46, 204, 113, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 16px rgba(46, 204, 113, 0.75),
+      0 0 28px rgba(46, 204, 113, 0.5);
+  }
 }
+
+.interactive-border:hover {
+  animation: pulseGlow 5s infinite ease-in-out;
+}
+

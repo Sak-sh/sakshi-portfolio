@@ -4,14 +4,13 @@ import './ProjectPage.css';
 const Project1 = () => {
   return (
     <div className="project-page">
-      <h1>A Digital Platform for Book Sharing (One-Way Swap Model)</h1>
+      <h1>Blog Sphere: Publish and Explore Blogs</h1>
 
       <section>
         <h2>Overview</h2>
         <p>
-          This MERN stack application allows users to list books they want to give away and send one-way swap
-          requests. Authenticated users can manage their books, requests, and view profiles. Admin approval and
-          tracking is integrated.
+                      Blog Sphere is a MERN stack blogging platform that allows users to publish posts effortlessly with full CRUD functionality.
+              Users can create, update, view  and delete posts while managing their content securely through authentication.
         </p>
       </section>
 
@@ -29,11 +28,11 @@ const Project1 = () => {
 
       <section className="screenshot-section">
         <h2>Project Screenshots</h2>
-        <img src="/book1.png" alt="Home Page" />
-         <img src="/book2.png" alt="Home Page" />
-          <img src="/book3.png" alt="Home Page" />
-           <img src="/book4.png" alt="Home Page" />
-            <img src="/book5.png" alt="Home Page" />
+        <img src="/blog1.png" alt="Home Page" />
+         <img src="/blog2.png" alt="Home Page" />
+          <img src="/blog3.png" alt="Home Page" />
+          
+            <img src="/blog5.png" alt="Home Page" />
        
       </section>
     </div>

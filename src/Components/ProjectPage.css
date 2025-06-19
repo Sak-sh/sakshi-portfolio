@@ -27,7 +27,15 @@
     text-align: center;
 }
 
+.project-card:hover {
+  border-color: #2ecc71;
+  box-shadow: 0 0 20px #2ecc71;
+  transform: scale(1.05);
+}
 
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
 
 .project-page h2 {
   color: #00ffc3;

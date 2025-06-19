@@ -1,0 +1,79 @@
+/* Background and full page style */
+.about-section {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading style */
+.about-heading {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+.about-heading svg {
+  color: #00ffae;
+  font-size: 1.4em;
+  transition: transform 0.4s ease;
+}
+
+.about-heading:hover svg {
+  transform: rotate(15deg) scale(1.1);
+}
+/* About card style */
+.about-card {
+  background-color: #121212;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 174, 0.4);
+  text-align: justify;
+  font-size: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 2px solid #00ffae;
+}
+
+.about-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 255, 174, 0.7);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 30px 20px;
+    font-size: 18px;
+  }
+
+  .about-heading {
+    font-size: 36px;
+  }
+}

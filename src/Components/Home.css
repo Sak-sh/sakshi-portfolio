@@ -1,3 +1,4 @@
+/* Home Container */
 .home-container {
   display: flex;
   align-items: center;
@@ -6,32 +7,148 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top : 80px;
 }
 
-/* For mobile: stack vertically, photo first, both centered */
+
+/* Responsive: On mobile, photo comes first */
 @media (max-width: 768px) {
   .home-container {
-    flex-direction: column;
-    align-items: center;  /* center children horizontally */
-    text-align: center;   /* center text inside */
-  }
-
-  .photo-container {
-    order: -1;
-    margin-bottom: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
   }
 
   .intro {
     max-width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* center children inside intro */
+    align-items: center;
   }
 
-  .profile-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
+  .social-icons {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 12px;
   }
 }
 
+/* Fade-in animation for intro */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Button hover effect */
+.btn-hover {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 10px rgba(0, 128, 90, 0.3);
+}
+
+.btn-hover:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+/* Social icon style */
+.social-icon {
+  width: 36px;
+  height: 36px;
+  filter: grayscale(60%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* On hover: colorize and scale up */
+.social-link:hover .social-icon {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+/* Underline animation for social links */
+.social-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.social-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2ecc71;
+  transition: width 0.3s ease;
+}
+
+.social-link:hover::after {
+  width: 100%;
+}
+
+/* Photo Container */
+.circle-photo {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 4px solid rgba(46, 204, 113, 0.8);
+  box-shadow: 0 0 20px rgba(46, 204, 113, 0.7);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: default;
+
+  /* Only one unified animation now */
+  animation: combinedEffect 10s infinite ease-in-out;
+}
+
+/* COMBINED animation: zoom, flip and pulseGlow together */
+@keyframes combinedEffect {
+  0% {
+    transform: scale(1) rotateY(0deg);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.7), 0 0 30px rgba(46, 204, 113, 0.5);
+  }
+  25% {
+    transform: scale(1.06) rotateY(0deg);
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.8), 0 0 40px rgba(46, 204, 113, 0.6);
+  }
+  50% {
+    transform: scale(1.12) rotateY(90deg);
+    box-shadow: 0 0 40px rgba(46, 204, 113, 1), 0 0 60px rgba(46, 204, 113, 0.8);
+  }
+  75% {
+    transform: scale(1.06) rotateY(0deg);
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.8), 0 0 40px rgba(46, 204, 113, 0.6);
+  }
+  100% {
+    transform: scale(1) rotateY(0deg);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.7), 0 0 30px rgba(46, 204, 113, 0.5);
+  }
+}

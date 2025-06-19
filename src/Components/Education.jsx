@@ -10,7 +10,7 @@ const Education = () => {
 
         <div className="education-row">
           {/* Card 1 */}
-         <div className="education-card">
+         <div className="education-card interactive-border">
   <h4>SSC</h4>
   <ul className="education-short">
     <li>School: Shree Shivaji Vidyalaya, Surur</li>
@@ -23,7 +23,7 @@ const Education = () => {
 
 
           {/* Card 2 */}
-           <div className="education-card">
+           <div className="education-card interactive-border">
   <h4>DIPLOMA</h4>
   <ul className="education-short">
     <li>Institute : Government Polytechnic Karad</li>
@@ -32,11 +32,11 @@ const Education = () => {
   <p className="education-description">
     Successfully completed Diploma in Computer Engineering with a solid foundation in technical concepts and hands-on project experience.</p>
 </div>
-        </div>
+        
 
         {/* Card 3 - Centered Below */}
-        <div className="education-row center">
-          <div className="education-card">
+       
+          <div className="education-card interactive-border">
             <h4>B.E. in Computer Science</h4>
             <ul className="education-short">
             <li><p className="education-short">Institute :  Dr. D. Y. Patil Pratishthan's D.Y. Patil College of Engineering, Akurdi, Pune</p></li>

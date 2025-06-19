@@ -1,0 +1,115 @@
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);  /* Fixed width columns */
+  justify-content: center;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #121212;
+  border-radius: 15px;
+  padding: 10px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;        /* Fixed width */
+  height: 180px;       /* Fixed height */
+  margin: 0 auto;
+  box-shadow: 0 0 18px #2ecc71;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px #2ecc71;
+}
+
+.skill-card p {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* Special container for HTML and CSS icons side by side */
+.html-css-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-text-icon {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  user-select: none;
+  text-transform: uppercase;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 200px);
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 200px);
+    gap: 6px;
+  }
+
+  .skill-card {
+    width: 140px;
+    height: 160px;
+  }
+
+  .skill-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .skill-card {
+    width: 160px;
+    height: 160px;
+    padding: 16px 5px;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+  }
+}
